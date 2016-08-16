@@ -2,6 +2,7 @@
   {{#each model as |newsitem|}}
     <li>{{newsitem.headline}}</li>
     <button {{action 'destroyNewsItem' newsitem}}>Delete</button>
+    {{update-newsitem newsitem=newsitem update="update"}}
   {{/each}}
 </ul>
 
