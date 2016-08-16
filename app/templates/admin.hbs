@@ -1,2 +1,9 @@
+<ul>
+  {{#each model as |newsitem|}}
+    <li>{{newsitem.headline}}</li>
+    <button {{action 'destroyNewsItem' newsitem}}>Delete</button>
+  {{/each}}
+</ul>
+
 
 {{new-newsitem save2="save3"}}
