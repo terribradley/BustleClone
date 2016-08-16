@@ -1,7 +1,5 @@
 <ul>
   {{#each model as |newsitem|}}
-    <li><img src={{newsitem.image}}></li>
-    <li>{{newsitem.shortheadline}}</li> <li>{{newsitem.category}}</li>
-    <li>{{newsitem.author}}</li> <li>{{newsitem.timestamp}}</li>
+    {{news-tile newsitem=newsitem}}
   {{/each}}
 </ul>
