@@ -1,5 +1,11 @@
-<ul>
+<!-- <div class="carousel">
+  {{image-carousel newsitems=model}}
+
+</div> -->
+
+
   {{#each model as |newsitem|}}
+  <div class="news-tile">
     {{news-tile newsitem=newsitem}}
+  </div>
   {{/each}}
-</ul>

@@ -1,6 +1,16 @@
-<li>{{model.headline}}</li>
-<li>{{model.author}}</li>
-<li>{{model.timestamp}}</li>
-<li>{{model.category}}</li>
-<li><img src={{model.image}}></li>
-<li>{{model.story}}</li>
+<div class="story-content">
+  <section class="top">
+    <div class="title">
+      <h1>{{model.headline}}</h1>
+      <h4>{{model.author}}</h4>
+      <div class="time">
+        <h4>{{model.timestamp}}</h4>
+        <h4>{{model.category}}</h4>    
+      </div>
+    </div>
+    <img src={{model.image}}>
+
+  </section>
+  {{model.story}}
+
+</div>

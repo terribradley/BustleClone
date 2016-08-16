@@ -1,6 +1,11 @@
 
-    {{#link-to 'news' newsitem.id}}<li><img src={{newsitem.image}}></li>
-    <li>{{newsitem.shortheadline}}</li>{{/link-to}}
-    <li>{{newsitem.category}}</li>
-    <li>{{newsitem.author}}</li>
-    <li>{{newsitem.timestamp}}</li>
+    {{#link-to 'news' newsitem.id}}
+    <img src={{newsitem.image}}>
+    <h2>{{newsitem.shortheadline}}</h2>
+    {{/link-to}}
+    <p>{{newsitem.category}}</p>
+    <hr>
+    <div class="author">
+      <h4>{{newsitem.author}}</h4>
+      <h4>{{newsitem.timestamp}}</h4>
+    </div>
